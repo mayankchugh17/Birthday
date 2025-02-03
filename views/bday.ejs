@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <title>Happy Birthday!</title>
+    <style>
+      body {
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        font-family: Arial, sans-serif;
+        text-align: center;
+        color: white;
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: scroll;
+      }
+
+      .container {
+        padding: 20px;
+        border-radius: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        width: 40%;
+      }
+      h1 {
+        font-size: 3rem;
+      }
+      .balloons {
+        font-size: 4rem;
+        animation: float 3s infinite alternate ease-in-out;
+      }
+
+      .card1 {
+        font-size: 1.5rem;
+        height: 35rem;
+        color: black;
+      }
+      @keyframes float {
+        from {
+          transform: translateY(70px);
+        }
+        to {
+          transform: translateY(1rem);
+        }
+      }
+
+      .cloud {
+        background: white;
+        font-size: 1.3rem;
+        width: 300px;
+        height: 150px;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: bold;
+        color: #ff4081;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+        animation: float 3s ease-in-out infinite;
+      }
+
+      .cloud::before,
+      .cloud::after {
+        content: "";
+        position: absolute;
+        background: white;
+        border-radius: 50%;
+      }
+
+      .cloud::before {
+        width: 120px;
+        height: 120px;
+        top: -50px;
+        left: 10px;
+      }
+
+      .cloud::after {
+        width: 90px;
+        height: 90px;
+        top: -30px;
+        right: 10px;
+      }
+      .btn{
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        color: black;
+        transform: translateX(-3.2rem);
+        border-radius: 0.5rem;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0rem);
+        }
+        50% {
+          transform: translateY(-0.2rem);
+        }
+        100% {
+          transform: translateY(1rem);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cloud">Happy Birthday Darpan!</div>
+    <div class="container mt-5">
+      <div class="balloons">🎈🎂🎉</div>
+      <!-- <h1>Happy Birthday <b>Darpan</b >!</h1> -->
+      <p class="card1">
+        On this special day, I want to express how grateful
+        I am to have you in my life. 💕 Your kindness and presence make every
+        moment brighter! ✨ <br /><br />On your special day, I wish you wisdom
+        🧠, success 🏆, and happiness 😊. May every decision you make lead you
+        to greatness 🌟, and may you always find fulfillment in the beautiful
+        journey of life. 🚀💫 A true friend like you is a gift. <br /><br />🎁💖
+        Thank you for always being there, for your honesty, and for the
+        countless moments of laughter 😂 and support 🤗. May this birthday bring
+        you endless joy 🎊, success 💼, and all the happiness you deserve!
+        Wishing you a fantastic day filled with love, laughter, and
+        unforgettable memories! 🎈🥳💞
+      </p>
+    </div>
+    <form action="/birthday/special" method="get">
+    <div class="unknown">
+        <button type="submit" class="btn btn-secondary mt-5 offset-4">
+          Why you are so special for me? Tap here to know
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
