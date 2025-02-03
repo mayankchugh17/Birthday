@@ -1,6 +1,9 @@
+
 const express = require("express");
 const app = express();
-const port = 8080;
+
+// Use the PORT environment variable, or default to 8080 if it's not set
+const port = process.env.PORT || 8080;
 
 app.listen(port, (err) => {
     if (err) {
