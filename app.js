@@ -16,10 +16,10 @@ app.listen(port, (err) => {
 app.set("view engine", "ejs");
 //app.set("views",path.join(__dirname,"views"));
 
-app.get("/birthday",(req,res)=>{
+app.get("/",(req,res)=>{
   res.render("bday.ejs")
 })
 
-app.get("/birthday/special",(req,res)=>{
+app.get("/special",(req,res)=>{
   res.render("special.ejs");
 })
